@@ -1,0 +1,48 @@
+1、打印当前目录
+pwd
+
+2、列举当前目录下面的所有子项，并将结果输入到当前目录下面的1.txt中
+ls > 1.txt
+
+3、切换到当前目录下面的app目录
+cd app
+cd ./app
+
+4、在app目录中创建css、js两个同级目录
+mkdir css js
+
+5、在css中创建1.css 在js中的创建1.js
+touch css/1.css js/1.js
+
+6、编辑1.js文件封装求2个数字的加法函数
+vi js/1.js
+i
+function sum(a,b){ return a+b; }
+esc
+:wq
+
+7、切换到app目录下
+cd .
+
+8、git 配置全局用户名为"test1" 邮箱为："test1@qq.com"
+git config --global user.name "test1"
+git config --global user.email "test1@qq.com"
+
+9、git仓库初始化
+git init
+
+10、将所有文件添加到暂存区
+git add *
+
+11、提交到主仓库并使用vi编辑器输入备注信息，备注信息为："写了玩的"
+git commit
+i
+写了玩的
+esc
+:wq
+
+
+12、在app目录下创建1.html并将它提交到仓库中
+touch 1.html
+git add 1.html
+git commit -m 就是想玩一下
